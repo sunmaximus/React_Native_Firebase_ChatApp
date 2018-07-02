@@ -3,14 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "react": "15.3.1",
-    "react-native": "0.32.1",
-    "react-native-gifted-chat": "0.0.10"
+    "react-native": "0.39.1",
+    "react-native-gifted-chat": "0.0.10",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "firebase": "^3.3.2"
-  }
+  },
+  "snyk": true
 }
